@@ -1,0 +1,68 @@
+{
+    "_comment": "Add these entries to the 'filament_list' array in BBL.json",
+    "_location": "C:\\Users\\<username>\\AppData\\Roaming\\BambuStudio\\system\\BBL.json",
+    "_instructions": "Find the 'filament_list' array and add these entries (without the _comment, _location, and _instructions fields)",
+
+    "entries": [
+        {
+            "name": "SUNLU PLA @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PLA @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU PLA @BBL H2D 0.2 nozzle",
+            "sub_path": "filament/SUNLU/SUNLU PLA @BBL H2D 0.2 nozzle.json"
+        },
+        {
+            "name": "SUNLU PLA HF @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PLA HF @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU PLA+ @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PLA+ @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU PLA+ 2.0 @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PLA+ 2.0 @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU PLA+ 2.0 @BBL H2D 0.2 nozzle",
+            "sub_path": "filament/SUNLU/SUNLU PLA+ 2.0 @BBL H2D 0.2 nozzle.json"
+        },
+        {
+            "name": "SUNLU PLA+ 2.0 @BBL H2D 0.6 nozzle",
+            "sub_path": "filament/SUNLU/SUNLU PLA+ 2.0 @BBL H2D 0.6 nozzle.json"
+        },
+        {
+            "name": "SUNLU PLA+ 2.0 HF @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PLA+ 2.0 HF @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU Silk PLA @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU Silk PLA @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU PETG @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PETG @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU PETG @BBL H2D 0.2 nozzle",
+            "sub_path": "filament/SUNLU/SUNLU PETG @BBL H2D 0.2 nozzle.json"
+        },
+        {
+            "name": "SUNLU PETG HF @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU PETG HF @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU ABS @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU ABS @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU ABS HF @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU ABS HF @BBL H2D.json"
+        },
+        {
+            "name": "SUNLU TPU @BBL H2D",
+            "sub_path": "filament/SUNLU/SUNLU TPU @BBL H2D.json"
+        }
+    ]
+}

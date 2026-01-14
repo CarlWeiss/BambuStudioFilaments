@@ -1,0 +1,172 @@
+name: New Profile Submission
+description: Submit new filament profiles for a printer/vendor combination
+title: "[PROFILES] "
+labels: ["new-profiles", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing new profiles! Please provide the information below to help us review and integrate your profiles.
+
+  - type: input
+    id: printer
+    attributes:
+      label: Printer Model
+      description: Which printer are these profiles for?
+      placeholder: "e.g., Bambu Lab H2D, X1C, P1S with Obsidian HF nozzle"
+    validations:
+      required: true
+
+  - type: input
+    id: vendor
+    attributes:
+      label: Filament Vendor
+      description: Which filament vendor are these profiles for?
+      placeholder: "e.g., SUNLU, eSUN, Polymaker, Prusament"
+    validations:
+      required: true
+
+  - type: input
+    id: profile-count
+    attributes:
+      label: Number of Profiles
+      description: How many profiles are you submitting?
+      placeholder: "e.g., 12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: materials
+    attributes:
+      label: Materials/Variants Included
+      description: List the materials and variants included in your profiles
+      placeholder: |
+        - PLA (standard, 0.2 nozzle, HF)
+        - PETG (standard, HF)
+        - ABS
+      value: |
+        -
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Profile Source
+      description: How were these profiles created?
+      options:
+        - Derived from vendor base profiles (recommended)
+        - Exported from BambuStudio user profiles
+        - Manually created from scratch
+        - Modified from existing profiles
+        - Other (explain in description)
+    validations:
+      required: true
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing Details
+      description: Describe how you've tested these profiles
+      placeholder: |
+        - Tested with: Bambu Lab H2D with 0.4mm and 0.6mm nozzles
+        - Print tests: benchy, calibration cube, temperature tower
+        - Results: Good layer adhesion, minimal stringing, excellent surface finish
+      value: |
+        - Tested with:
+        - Print tests:
+        - Results:
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: What base profiles or setup steps are needed before installing these profiles?
+      placeholder: |
+        Users must first download the vendor's base profiles through BambuStudio:
+        1. Open Filament tab > Settings > Custom Filaments > Create New
+        2. Select [VENDOR] as the vendor
+        3. Add these base profiles: ...
+      value: |
+
+
+  - type: dropdown
+    id: ams-tested
+    attributes:
+      label: AMS Integration Tested
+      description: Have you verified that these profiles appear in the AMS dropdown?
+      options:
+        - "Yes - Profiles appear in AMS dropdown"
+        - "No - Profiles are for slicing only"
+        - "Partial - Some profiles work in AMS"
+        - "Not tested yet"
+    validations:
+      required: true
+
+  - type: input
+    id: setting-id-range
+    attributes:
+      label: Setting ID Range
+      description: What setting_id format/range did you use?
+      placeholder: "e.g., GFSNLS04_H2D1 through GFSNLS04_H2D15"
+    validations:
+      required: true
+
+  - type: textarea
+    id: documentation
+    attributes:
+      label: Documentation Provided
+      description: What documentation are you including?
+      value: |
+        - [ ] README.md with vendor-specific instructions
+        - [ ] bbl_json_entries.json with BBL.json entries
+        - [ ] Profile settings summary/table
+        - [ ] Troubleshooting notes (if applicable)
+        - [ ] Print test photos (if available)
+
+  - type: dropdown
+    id: file-location
+    attributes:
+      label: How are you providing the files?
+      description: How will you submit the profile files?
+      options:
+        - Pull Request (preferred)
+        - Link to GitHub fork/branch
+        - Attached ZIP file (in follow-up comment)
+        - Link to external hosting
+        - Will provide in follow-up comment
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Notes
+      description: Any special notes, warnings, or context about these profiles
+      placeholder: |
+        - These profiles work best with...
+        - Known limitation: ...
+        - Special thanks to...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      description: Please confirm the following
+      options:
+        - label: All profile files follow the naming convention (Brand Material @BBL Printer.json)
+          required: true
+        - label: Each profile has a unique setting_id
+          required: true
+        - label: I have created a bbl_json_entries.json file
+          required: true
+        - label: I have tested these profiles on actual hardware
+          required: true
+        - label: I have included vendor-specific documentation
+          required: true
+        - label: I have read CONTRIBUTING.md
+          required: true
+        - label: I confirm these profiles are my own work or properly attributed
+          required: true

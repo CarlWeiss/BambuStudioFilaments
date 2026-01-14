@@ -1,0 +1,77 @@
+{
+    "_comment": "Add these entries to the 'filament_list' array in BBL.json",
+    "_location": "C:\\Users\\<username>\\AppData\\Roaming\\BambuStudio\\system\\BBL.json",
+    "_instructions": "Find the 'filament_list' array and add these entries (without the _comment, _location, and _instructions fields)",
+    "_note": "These profiles use 'Bambu Lab' as the folder name (with space) in BambuStudio system directory",
+
+    "entries": [
+        {
+            "name": "Bambu ABS @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu ABS @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PC @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PC @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PETG HF @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PETG HF @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PETG Translucent @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PETG Translucent @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Basic @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Basic @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Dynamic @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Dynamic @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Galaxy @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Galaxy @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Glow @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Glow @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Lite @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Lite @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Marble @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Marble @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Matte @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Matte @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Metal @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Metal @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Silk @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Silk @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Silk+ @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Silk+ @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Sparkle @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Sparkle @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu PLA Wood @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu PLA Wood @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        },
+        {
+            "name": "Bambu TPU for AMS @Bambu Lab P1S 0.4  ObXidian HF nozzle",
+            "sub_path": "filament/Bambu Lab/Bambu TPU for AMS @Bambu Lab P1S 0.4  ObXidian HF nozzle.json"
+        }
+    ]
+}

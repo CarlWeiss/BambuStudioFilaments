@@ -1,0 +1,34 @@
+# PowerShell
+*.ps1xml
+
+# BambuStudio system files (if accidentally copied)
+BBL.json
+BBL.json.backup.*
+*.backup
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude Code artifacts
+.claude/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Node modules (if any JS tooling added later)
+node_modules/
+
+# Test results
+TestResults/
+*.trx

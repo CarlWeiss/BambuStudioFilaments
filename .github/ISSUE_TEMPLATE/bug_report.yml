@@ -1,0 +1,148 @@
+name: Bug Report
+description: Report a bug or issue with the installation scripts or profiles
+title: "[BUG] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below to help us diagnose and fix the issue.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of the project is affected?
+      options:
+        - Installation Script (Install-FilamentProfiles.ps1)
+        - Uninstallation Script (Uninstall-FilamentProfiles.ps1)
+        - Profile Files (JSON profiles)
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: printer
+    attributes:
+      label: Printer Model
+      description: Which printer are you using?
+      options:
+        - Bambu Lab H2D
+        - Bambu Lab P1S (Obsidian HF Nozzle)
+        - Bambu Lab X1C
+        - Bambu Lab P1P
+        - Bambu Lab A1
+        - Other (specify in description)
+    validations:
+      required: true
+
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor
+      description: Which filament vendor's profiles are you trying to use?
+      placeholder: "e.g., SUNLU, BambuLab, eSUN"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: "When I run the installation script..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Run '.\Install-FilamentProfiles.ps1'
+        2. Select printer '...'
+        3. Select vendor '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "The profiles should install successfully..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "I received an error message..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Error Message (if applicable)
+      description: Please paste any error messages you received
+      render: shell
+      placeholder: |
+        Install-FilamentProfiles.ps1: Cannot bind argument to parameter...
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What operating system are you using?
+      options:
+        - Windows 11
+        - Windows 10
+        - Windows Server
+        - Linux
+        - macOS
+    validations:
+      required: true
+
+  - type: input
+    id: powershell-version
+    attributes:
+      label: PowerShell Version
+      description: "Run `$PSVersionTable.PSVersion` in PowerShell to get this"
+      placeholder: "e.g., 5.1.19041.4648"
+
+  - type: input
+    id: bambu-version
+    attributes:
+      label: BambuStudio Version
+      description: What version of BambuStudio are you using?
+      placeholder: "e.g., 01.09.03.50"
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here (screenshots, logs, etc.)
+      placeholder: "I noticed this only happens when..."
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-submission Checklist
+      description: Please confirm the following
+      options:
+        - label: I have searched existing issues to ensure this is not a duplicate
+          required: true
+        - label: I have read the documentation (README.md, vendor-specific READMEs)
+          required: true
+        - label: I have tried running BambuStudio as administrator (if on Windows)
+          required: false
+        - label: I have verified BambuStudio is closed before running the script
+          required: false

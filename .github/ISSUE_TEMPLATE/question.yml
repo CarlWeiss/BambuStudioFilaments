@@ -1,0 +1,74 @@
+name: Question or Support
+description: Ask a question or get help with using the profiles
+title: "[QUESTION] "
+labels: ["question", "needs-response"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? We're here to help! Please provide details so we can assist you effectively.
+
+        **Note:** For bugs, please use the Bug Report template instead.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Question Category
+      description: What is your question about?
+      options:
+        - Installation/Setup
+        - Using the profiles in BambuStudio
+        - AMS integration
+        - Creating custom profiles
+        - Troubleshooting print issues
+        - Contributing to the project
+        - General inquiry
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: What would you like to know?
+      placeholder: "How do I..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What Have You Tried?
+      description: What steps have you already taken to solve this?
+      placeholder: |
+        - I read the README
+        - I tried...
+        - I checked the vendor-specific documentation
+      value: |
+        -
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Any other details that might be relevant
+      placeholder: |
+        - My printer: Bambu Lab H2D
+        - My filament: SUNLU PLA+ 2.0
+        - BambuStudio version: 01.09.03.50
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-question Checklist
+      description: Have you checked these resources?
+      options:
+        - label: I have read the main README.md
+          required: true
+        - label: I have checked the vendor-specific README (if applicable)
+          required: false
+        - label: I have searched existing issues for similar questions
+          required: true
+        - label: I have checked the BambuLab wiki/documentation
+          required: false
