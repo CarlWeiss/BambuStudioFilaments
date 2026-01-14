@@ -13,7 +13,7 @@ body:
     attributes:
       label: Printer Model
       description: Which printer are these profiles for?
-      placeholder: "e.g., Bambu Lab H2D, X1C, P1S with Obsidian HF nozzle"
+      placeholder: "e.g., Bambu Lab H2D, X1C, P1S with ObXidian HF nozzle"
     validations:
       required: true
 

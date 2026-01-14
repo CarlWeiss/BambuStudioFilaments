@@ -12,7 +12,6 @@ Yes, you could create a pull request against the BambuStudio project but this ap
 
 Some cases where Bambu Lab dosnt provide filament profiles:
 - **New printers** like the H2D initially launched without SUNLU profiles
-- **Specialty configurations** (e.g., P1S with Obsidian nozzle) may not have vendor-specific profiles
 - **Third-party filaments** often lack proper AMS integration even when base profiles exist
 
 Many users create custom filament profiles for BambuStudio that work for slicing but **don't appear in the AMS dropdown**. This is because AMS visibility requires specific fields (`setting_id`, proper inheritance, registration in `BBL.json`) that aren't obvious or well-documented.
@@ -37,13 +36,6 @@ The SUNLU H2D profiles were created because:
 3. Using the techniques documented here, H2D-specific profiles were derived from those bases
 4. Now these profiles work perfectly in the AMS, just like official profiles
 
-**Example 2: P1S Obsidian HF Profiles**
-The P1S Obsidian HF profiles address a different gap:
-1. The Obsidian hardened steel HF nozzle has unique thermal and flow characteristics
-2. Standard P1S profiles don't optimize for the HF nozzle's capabilities
-3. These profiles were tuned specifically for the Obsidian nozzle's properties
-4. They enable proper use of abrasive and high-flow filaments
-
 **You can use these same approaches** to create profiles for any printer model, specialty hardware, or vendor combination that Bambu Lab hasn't officially supported yet.
 
 ## Currently Available Profiles
@@ -63,31 +55,6 @@ H2D-optimized SUNLU filament profiles covering:
 | **TPU** | Standard | 0.4/0.6/0.8 |
 
 All profiles are configured for dual extruder support and include proper `setting_id` values for AMS recognition.
-
-### Bambu Lab Filaments for P1S with Obsidian HF Nozzle (17 profiles)
-
-Profiles optimized for the P1S equipped with the **Obsidian 0.4mm High Flow hardened steel nozzle**:
-
-| Category | Profiles | Notes |
-|----------|----------|-------|
-| **PLA Variants** | Basic, Lite, Silk, Silk+, Dynamic, Marble, Matte, Metal, Galaxy, Sparkle, Glow, Wood | 12 variants optimized for HF nozzle |
-| **PETG** | HF, Translucent | 2 variants |
-| **ABS** | Standard | 1 variant |
-| **PC** | Polycarbonate | 1 variant |
-| **TPU** | TPU for AMS | 1 variant |
-
-These profiles are tuned for the unique characteristics of the hardened steel HF nozzle, including higher flow rates and different thermal properties compared to standard brass nozzles. Ideal for abrasive filaments (carbon fiber, wood-fill, metal-fill).
-
-**Note:** These are user-exported profiles and may require conversion to system profiles for full AMS integration. See [P1S_ObsidianHF documentation](P1S_ObsidianHF/BambuLab/README.md) for details.
-
-### Future Additions
-
-This repository will expand to include profiles for:
-- **More vendors for H2D**: eSUN, Polymaker, Overture, etc.
-- **More vendors for Obsidian HF**: SUNLU, eSUN, Polymaker for P1S Obsidian
-- **Additional printers**: X1C, P1P, A1, P2S, etc.
-- **More specialty configurations**: Different hardened nozzles, custom hotends
-- **Cross-combinations**: Third-party vendors + specialty hardware
 
 > **Want to contribute?** If you've created profiles for an unsupported printer/vendor combo, share them! See the [Contributing](#contributing) section below.
 
@@ -352,39 +319,6 @@ These profiles use the following `setting_id` pattern to avoid conflicts:
 - **_H2D**: H2D-specific suffix
 - **NUMBER**: Variant (1=standard, 2=0.2 nozzle, 3=HF/High Flow)
 
-### Repository Organization
-
-```
-BambuStudioFilaments/
-├── README.md                          # Main documentation
-├── Adding_Custom_Filaments.md         # Technical guide: how profiles work
-├── Install-FilamentProfiles.ps1       # Installation script (SUNLU H2D)
-├── Uninstall-FilamentProfiles.ps1     # Uninstall script (SUNLU H2D)
-│
-├── H2D/                               # H2D printer profiles
-│   ├── README.md                      # H2D overview
-│   └── SUNLU/                         # SUNLU vendor for H2D
-│       ├── README.md
-│       ├── bbl_json_entries.json
-│       ├── SUNLU_H2D_Profiles.md
-│       └── *.json (14 profiles)
-│
-├── P1S_ObsidianHF/                    # P1S with Obsidian HF nozzle
-│   ├── README.md                      # Obsidian HF overview
-│   └── BambuLab/                      # Bambu Lab vendor for Obsidian HF
-│       ├── README.md
-│       ├── bbl_json_entries.json
-│       └── *.json (17 profiles)
-│
-└── [Future Configurations]/           # Additional printers/configs
-    ├── X1C/
-    │   └── [Vendor]/
-    ├── P1P/
-    │   └── [Vendor]/
-    └── A1/
-        └── [Vendor]/
-```
-
 ### BambuStudio Loading Order
 
 BambuStudio loads profiles from three locations:
@@ -431,7 +365,7 @@ Contributions are welcome! This repository aims to be a comprehensive collection
 
 If you've successfully created profiles for a printer or configuration that Bambu Lab doesn't officially support yet, **please share them!** Examples include:
 - New printer models without vendor profiles (like H2D was at launch)
-- Specialty nozzles or hotends (Obsidian nozzle, high-flow hotends, etc.)
+- Specialty nozzles or hotends (ObXidian nozzle, high-flow hotends, etc.)
 - Popular vendors missing profiles for certain printers
 - Custom printer configurations
 
@@ -442,7 +376,7 @@ Your contribution helps the entire community and serves as a reference for other
 To contribute profiles for a new vendor or printer model:
 
 1. **Create the folder structure**: `PrinterModel/VendorName/`
-   - Example: `H2D/SUNLU/`, `X1C/eSUN/`, `P1S_Obsidian/Polymaker/`
+   - Example: `H2D/SUNLU/`, `X1C/eSUN/`, `P1S_ObXidian/Polymaker/`
 2. **Add profile JSON files** with proper `setting_id` values (see [Adding_Custom_Filaments.md](Adding_Custom_Filaments.md) for details)
 3. **Create a JSON entries file** (`bbl_json_entries.json`) with BBL.json entries
 4. **Write vendor-specific documentation** (optional but recommended) - include prerequisites and any special notes
@@ -460,7 +394,7 @@ To contribute profiles for a new vendor or printer model:
 
 **Profiles that fill official support gaps:**
 - **New printer models** that launched without vendor profiles
-- **Specialty configurations** (Obsidian nozzle, hardened steel nozzles, high-flow hotends)
+- **Specialty configurations** (ObXidian nozzle, hardened steel nozzles, high-flow hotends)
 - **Popular vendor/printer combos** lacking official profiles
 
 **Additional profile coverage:**
@@ -501,22 +435,12 @@ You are free to use, modify, and distribute these profiles, provided derivative 
 - Full AMS integration with proper `setting_id` values
 - Automated PowerShell installation and uninstall scripts
 
-**P1S Obsidian HF Profiles (17 profiles):**
-- Bambu Lab filament profiles optimized for Obsidian hardened steel HF nozzle
-- Tuned for higher flow rates and abrasive filament compatibility
-- Includes specialty filaments (wood-fill, metal-fill, glow, etc.)
-- User-exported profiles with manual installation support
-
 **Documentation:**
 - Comprehensive installation guides for both profile sets
 - Technical deep-dive guide ([Adding_Custom_Filaments.md](Adding_Custom_Filaments.md)) showing how to derive profiles from bases
 - Working examples that can be used as templates for other unsupported printer/vendor combinations
 - Organized folder structure (Printer_Config/Vendor pattern)
 
-### Coming Soon
-- Additional vendor profiles (eSUN, Polymaker, etc.)
-- Support for additional printer models and configurations (X1C, P1P, A1, P2S, specialty nozzles)
-- Community contributions filling other support gaps
 
 ---
 

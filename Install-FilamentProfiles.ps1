@@ -12,7 +12,7 @@
     5. Updates BBL.json with the new filament entries
 
 .PARAMETER Printer
-    Specify the printer configuration (e.g., "H2D", "P1S_ObsidianHF")
+    Specify the printer configuration (e.g., "H2D")
 
 .PARAMETER Vendor
     Specify the vendor name (e.g., "SUNLU", "BambuLab")

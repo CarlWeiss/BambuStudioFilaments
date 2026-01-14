@@ -30,7 +30,7 @@ We welcome profiles for:
    ```
    PrinterModel/VendorName/
    ```
-   Examples: `H2D/eSUN/`, `X1C/Polymaker/`, `P1S-ObsidianHF/SUNLU/`
+   Examples: `H2D/eSUN/`, `X1C/Polymaker/`, `P1S-ObXidianHF/SUNLU/`
 
 3. **Add profile JSON files:**
    - Use proper `setting_id` values (see [Adding_Custom_Filaments.md](Adding_Custom_Filaments.md))
@@ -100,7 +100,7 @@ We welcome profiles for:
 
 ### Naming Conventions
 
-- **Folders**: Use hyphens for multi-word names: `P1S-ObsidianHF`, not `P1S_ObsidianHF`
+- **Folders**: Use hyphens for multi-word names: `P1S-ObXidianHF`, not `P1S_ObXidianHF`
 - **Profile files**: Follow BambuStudio convention: `<Brand> <Material> @BBL <Printer>.json`
 - **Functions**: Use approved PowerShell verbs: `Get-`, `Set-`, `New-`, `Resolve-`, etc.
 

@@ -12,7 +12,7 @@
     5. Removes the corresponding entries from BBL.json
 
 .PARAMETER Printer
-    Specify the printer configuration (e.g., "H2D", "P1S_ObsidianHF")
+    Specify the printer configuration (e.g., "H2D")
 
 .PARAMETER Vendor
     Specify the vendor name (e.g., "SUNLU", "BambuLab")

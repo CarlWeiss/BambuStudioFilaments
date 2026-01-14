@@ -29,7 +29,7 @@ body:
       description: Which printer are you using?
       options:
         - Bambu Lab H2D
-        - Bambu Lab P1S (Obsidian HF Nozzle)
+        - Bambu Lab P1S (ObXidian HF Nozzle)
         - Bambu Lab X1C
         - Bambu Lab P1P
         - Bambu Lab A1
