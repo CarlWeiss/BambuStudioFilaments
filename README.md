@@ -40,7 +40,7 @@ The SUNLU H2D profiles were created because:
 
 ## Currently Available Profiles
 
-### SUNLU Filaments for Bambu Lab H2D (14 profiles)
+### SUNLU Filaments for Bambu Lab H2D (15 profiles)
 
 H2D-optimized SUNLU filament profiles covering:
 
@@ -329,7 +329,7 @@ BambuStudio loads profiles from three locations:
 
 Only profiles in the **System** folder with proper `setting_id` appear in the AMS picker.
 
-For more technical details, see [Adding_Custom_Filaments.md](Adding_Custom_Filaments.md).
+For more technical details, see [Adding_Custom_Filaments.md](docs/Adding_Custom_Filaments.md).
 
 ---
 
@@ -429,7 +429,7 @@ You are free to use, modify, and distribute these profiles, provided derivative 
 
 ### v1.0 - Initial Release
 
-**SUNLU H2D Profiles (14 profiles):**
+**SUNLU H2D Profiles (15 profiles):**
 - Created to fill the gap when H2D launched without SUNLU support
 - Derived from SUNLU base profiles using documented techniques
 - Full AMS integration with proper `setting_id` values
@@ -437,7 +437,7 @@ You are free to use, modify, and distribute these profiles, provided derivative 
 
 **Documentation:**
 - Comprehensive installation guides for both profile sets
-- Technical deep-dive guide ([Adding_Custom_Filaments.md](Adding_Custom_Filaments.md)) showing how to derive profiles from bases
+- Technical deep-dive guide ([Adding_Custom_Filaments.md](docs/Adding_Custom_Filaments.md)) showing how to derive profiles from bases
 - Working examples that can be used as templates for other unsupported printer/vendor combinations
 - Organized folder structure (Printer_Config/Vendor pattern)
 

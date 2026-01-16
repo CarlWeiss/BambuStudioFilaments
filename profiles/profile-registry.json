@@ -1,0 +1,77 @@
+{
+    "_comment": "Central registry of all custom profiles in this repository",
+    "_description": "This file helps identify which profiles were installed from this repository, making it easier to track and remove them across multiple printers and vendors",
+    "_version": "1.0.0",
+
+    "repository": {
+        "name": "BambuStudioFilaments",
+        "url": "https://github.com/yourusername/BambuStudioFilaments",
+        "version": "1.0.0"
+    },
+
+    "identification_patterns": {
+        "_comment": "Generic patterns for identifying custom profiles from this repository",
+        "name_pattern": "@BBL {PRINTER}",
+        "setting_id_pattern": "{BASE_ID}_{PRINTER}{VARIANT}",
+        "compatible_printers_pattern": "Bambu Lab {PRINTER}*"
+    },
+
+    "profiles": {
+        "H2D": {
+            "SUNLU": {
+                "description": "SUNLU filament profiles for Bambu Lab H2D",
+                "count": 15,
+                "entries_file": "profiles/H2D/SUNLU/bbl_json_entries.json",
+                "materials": ["PLA", "PLA+", "PLA+ 2.0", "Silk PLA", "PETG", "ABS", "TPU"],
+                "name_pattern": "*@BBL H2D*",
+                "setting_id_pattern": "*_H2D*",
+                "destination_path": "filament/SUNLU/",
+                "profiles": [
+                    "SUNLU PLA @BBL H2D",
+                    "SUNLU PLA @BBL H2D 0.2 nozzle",
+                    "SUNLU PLA HF @BBL H2D",
+                    "SUNLU PLA+ @BBL H2D",
+                    "SUNLU PLA+ 2.0 @BBL H2D",
+                    "SUNLU PLA+ 2.0 @BBL H2D 0.2 nozzle",
+                    "SUNLU PLA+ 2.0 @BBL H2D 0.6 nozzle",
+                    "SUNLU PLA+ 2.0 HF @BBL H2D",
+                    "SUNLU Silk PLA @BBL H2D",
+                    "SUNLU PETG @BBL H2D",
+                    "SUNLU PETG @BBL H2D 0.2 nozzle",
+                    "SUNLU PETG HF @BBL H2D",
+                    "SUNLU ABS @BBL H2D",
+                    "SUNLU ABS HF @BBL H2D",
+                    "SUNLU TPU @BBL H2D"
+                ]
+            }
+        }
+    },
+
+    "examples": {
+        "_comment": "Template for adding new printer/vendor combinations",
+        "X1C": {
+            "eSUN": {
+                "description": "eSUN filament profiles for Bambu Lab X1C",
+                "count": 0,
+                "entries_file": "profiles/X1C/eSUN/bbl_json_entries.json",
+                "materials": [],
+                "name_pattern": "*@BBL X1C*",
+                "setting_id_pattern": "*_X1C*",
+                "destination_path": "filament/eSUN/",
+                "profiles": []
+            }
+        },
+        "P1S-ObXidianHF": {
+            "Polymaker": {
+                "description": "Polymaker profiles for P1S with ObXidian high-flow nozzle",
+                "count": 0,
+                "entries_file": "profiles/P1S-ObXidianHF/Polymaker/bbl_json_entries.json",
+                "materials": [],
+                "name_pattern": "*@BBL P1S ObXidian*",
+                "setting_id_pattern": "*_P1SO*",
+                "destination_path": "filament/Polymaker/",
+                "profiles": []
+            }
+        }
+    }
+}
